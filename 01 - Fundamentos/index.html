@@ -4,11 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundamentos de programación</title>
+
+  <!-- Segunda forma de escribir código de Javascript
+   Dentro de la etiquetas <head></head> colocamos las etiquetas <script></script> 
+   Esta forma tiene el incoveniente de que si el código interactua con algún elemento html, marcará error porque el documento aún no ha sido colocado.
+   Se utiliza el atributo "defer" en la etiqueta script, para que espere a cargar todo el HTML antes de ejecutar el código.-->
+
+  <script defer>
+  console.log("Este mensaje es desde el head!")
+  </script>
+
+  <!-- Tercera forma de escribir código de Javascript
+   Dentro de las etiquetas <head></head> usamos las etiquetas <script></script> con el atributo src 'source'.
+   Esto quiere decir que podemos enlazar un archivo externo para ser leído en html.
+   Esta es la forma más habitual de trabajar con JS. -->
+
+   <script defer src="holamundo.js")></script>
+
 </head>
 <body>
   <h1>Fundamentos de programación 💻👾</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, aut! Voluptatibus eius corporis odio distinctio quibusdam nihil vitae molestias fugiat enim? Ipsum reprehenderit quas necessitatibus quasi expedita molestias ex qui?
+  Assumenda laudantium totam animi laborum deleniti necessitatibus neque explicabo sint accusantium reprehenderit? Aliquam assumenda quidem quos ea eaque. Sunt quae odio tempora, ea et ipsam vero magnam asperiores itaque debitis!
+  Cumque nesciunt eos non recusandae sint? Quo, labore quas doloribus natus molestias esse minus minima sunt itaque maxime consequuntur vero aut, distinctio temporibus quaerat. Eligendi fugiat labore et consequuntur quibusdam.</p>
+
+  <!-- 
+   Primera forma de escribir código de Javascript. 
+   Dentro de la etiqueta <script>...código...</script>
+   Escribimos el código de JS.
+   
+   Esta etiqueta es definida antes de la etiqueta de cierre del </body> 
+   Esto es para que el código interactue con algún elemento del html, este ya este creado antes de ejecutar las instrucciones.
+   
+   -->
+
   <script>
-    console.log("Estoy aprendiendo a programar en Javascript");
+    console.log("Mensaje desde la etiqueta Script antes del cierre del Body");
     console.log("Este es un mensaje que paso a la consola y es super secreto") 
   </script>
 </body>
