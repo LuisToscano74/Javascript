@@ -33,6 +33,14 @@ Es el valor que se asigna a una variable que ha sido declarada pero no inicializ
 Es un conjunto de datos que los almacena en una lista ordenada de elementos. 
 Los datos dentro de los arreglos se escriben entre corchetes [] 
 
+* Object 
+
+Es un conjunto de múltiples datos en parres 'claves', 'valor'. Se escriben entre llaves {} y separados por comas''
+
+* Function o Funciones 
+
+Es un tipos de dato que puede ser "invocado"
+
 */
 
 let miNumeroNuevo = 5; 
@@ -75,4 +83,36 @@ console.log(misFrutasFavoritas);
 console.log(misNumerosFavoritos);
 console.log(otroArray);
 
-/* Aprendimos tipos de datos */
+/* Object */
+
+let persona = {
+  // Clave = valor,
+  nombre : "Luis",
+  edad : "20",
+  colorCabello : "Negro",
+  colorOjos : "Cafés",
+  altura : "1.68",
+  peso : "69 ks",
+  vivo : true,
+  novia: false,
+}
+
+console.log(persona);
+// Accedemos a los datos de una clave dentro de un objeto 
+// Con la notación de punto 
+
+console.log(persona.nombre);
+console.log(persona.edad);
+console.log(persona.altura);
+
+/* Function */
+
+let mensajito = function () {
+// Pasamos el código que ejecuta la función 
+}
+console.log("Este es un mensaje lanzado por una función");
+
+mensajito ();
+
+// "Aprendimos Objetos y Funciones como tipos de datos"
+
