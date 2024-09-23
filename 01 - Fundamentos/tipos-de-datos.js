@@ -114,5 +114,3 @@ console.log("Este es un mensaje lanzado por una función");
 
 mensajito ();
 
-// "Aprendimos Objetos y Funciones como tipos de datos"
-
